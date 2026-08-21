@@ -23,8 +23,14 @@ body {
     font-size: 2rem;
 }
 
-.osloskolen-gpt {
+.osloskolen-gpt, .max-gpt {
     /* outline: 5px solid black; */
-    height: 30vh;
-    aspect-ratio: 1.2;
+    width: 336px;
+    height: 280px;
+}
+
+.max-gpt {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
