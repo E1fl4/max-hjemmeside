@@ -1,3 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+video,
+svg {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
 body {
-    background-color: #f0fff0;
+    background-color: #ffffff;
+}
+
+.text1 {
+    margin-top: 20vh;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.osloskolen-gpt {
+    /* outline: 5px solid black; */
+    height: 30vh;
+    aspect-ratio: 1.2;
 }
