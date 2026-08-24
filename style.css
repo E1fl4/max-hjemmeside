@@ -14,23 +14,62 @@ svg {
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #4c7248;
+    overflow: hidden;
+
+    display: flex;
+}
+
+.text1, .text2 {
+    text-align: center;
+    font-size: 2rem;
+    color: lightblue;
 }
 
 .text1 {
     margin-top: 20vh;
-    text-align: center;
-    font-size: 2rem;
 }
 
 .osloskolen-gpt, .max-gpt {
     /* outline: 5px solid black; */
     width: 336px;
     height: 280px;
+
+    border-radius: 30px;
 }
 
 .max-gpt {
+    visibility: hidden;
     position: absolute;
+    opacity: 0.9;
     left: 0;
     top: 0;
+
+    box-shadow: 0 0 20px gold;
+}
+
+.max-gpt:hover {
+    outline: 40px solid red;
+}
+
+.max-btn {
+    margin: 10%;
+    margin-left: 30%;
+    width: 200px;
+    height: 400px;
+}
+
+.mid {
+    padding-left: 20%;
+}
+
+.side {
+    mix-blend-mode: difference;
+    z-index: 100;
+    width: 8%;
+    height: 100vh;
+}
+
+.side2 {
+    margin-left: 25%;
 }

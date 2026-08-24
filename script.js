@@ -5,8 +5,8 @@ let max = {
         y: 0,
     },
     velocity: {
-        x: 1,
-        y: 1
+        x: 5,
+        y: 2
     },
     width: 336,
     height: 280
@@ -15,6 +15,9 @@ let frameCount = 0;
 
 function loop() {
     frameCount++;
+
+    max.velocity.x *= 1.001;
+    if (max.velocity.x > 300) max.velocity.x = 1;
 
     max.position.x += max.velocity.x;
     max.position.y += max.velocity.y;
@@ -49,6 +52,11 @@ function loop() {
 
 maxGPT.addEventListener("click", () => {
     console.log("MaxGPT");
+    window.location = "https://en.wikipedia.org/wiki/List_of_paraphilias"
+});
+
+document.querySelector(".max-btn").addEventListener("click", () => {
+    maxGPT.style.visibility = "visible";
 });
 
 requestAnimationFrame(loop);
